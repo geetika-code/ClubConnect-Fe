@@ -56,7 +56,7 @@ function Navbar() {
                 className='nav-links'
                 onClick={closeMobileMenu}
               >
-                Chat
+                About
               </Link>
             </li>
 

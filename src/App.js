@@ -4,9 +4,9 @@ import './App.css';
 import Home from './components/pages/Home';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Events from './components/pages/Events';
-import Chat from './components/pages/Chat';
 import SignUp from './components/pages/SignUp';
-
+import Login from './components/pages/Login';
+import About from './components/pages/About';
 function App() {
   return (
     <>
@@ -15,9 +15,9 @@ function App() {
         <Routes>
         <Route exact path='/' element={< Home />}></Route>
         <Route exact path='/events' element={< Events />}></Route>
-        <Route exact path='/chat' element={< Chat />}></Route>
-          
           <Route path='/sign-up' element={<SignUp/>} ></Route>
+          <Route path='/chat' element={<About/>} ></Route>
+          <Route path='/login' element={<Login/>} ></Route>
         </Routes>
       </Router>
     </>

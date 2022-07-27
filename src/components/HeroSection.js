@@ -23,8 +23,8 @@ function HeroSection() {
           buttonSize='btn--large'
           onClick={console.log('hey')}
         >
-          WATCH A GLIMPSE <i className='far fa-play-circle' />
-        </Button>
+          WATCH A GLIMPSE
+        </Button> 
       </div>
     </div>
   );
