@@ -1,6 +1,6 @@
 import React from 'react';
-import './Form.css';
-import suc from './img-4.svg';
+import './styles/Form.css';
+import suc from './images/img-4.svg';
 
 const FormSuccess = () => {
   return (

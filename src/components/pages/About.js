@@ -1,8 +1,8 @@
 import React from 'react'
-import geetika from './geetika.jpeg'
+import geetika from './images/geetika.jpeg'
 import Temp from './Temp';
-import abhay from './abhay1.jpeg'
-import './About.css';
+import abhay from './images/abhay1.jpeg'
+import './styles/About.css';
 function About() {
   return (
     <div className ='text'>

@@ -1,9 +1,10 @@
 import React from 'react';
 import Temp from './Temp';
-import techtalk from './techtalk.jpeg';
-import webd from './webd.jpeg';
-import acting from './acting.jpeg';
-import insur from './insur.jpeg';
+import techtalk from './images/techtalk.jpeg';
+import webd from './images/webd.jpeg';
+import acting from './images/acting.jpeg';
+import insur from './images/insur.jpeg';
+
 function Events() {
   return (
     <div className='cards'>
