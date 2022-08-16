@@ -1,8 +1,9 @@
 import { useState, useEffect } from 'react';
+import { useNavigate } from "react-router-dom";
+import axios from "axios";
 
 const useForm = (callback, validate) => {
   const [values, setValues] = useState({
-    username: '',
     email: '',
     password: '',
     password2: ''
@@ -18,10 +19,21 @@ const useForm = (callback, validate) => {
     });
   };
 
-  const handleSubmit = e => {
+  const navigate = useNavigate();
+
+  const handleSubmit = (e) => {
     e.preventDefault();
 
-    setErrors(validate(values));
+    axios.post("http://localhost:5000/sign-up", values).then((res) => {
+      console.log(JSON.stringify(res));
+      // navigate("/");
+      
+    }).catch(function (err) {
+      alert("Error occured: " + err);
+      console.log(err);
+      // navigate("/sign-up");
+    });
+
     setIsSubmitting(true);
   };
 

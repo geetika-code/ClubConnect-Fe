@@ -1,7 +1,7 @@
 import React from 'react';
 import validate from './validateInfo';
 import useForm from './useForm';
-import './login.css';
+import './styles/login.css';
 
 const Login = ({ submitForm }) => {
   const { handleChange, handleSubmit, values, errors } = useForm(
@@ -13,16 +13,16 @@ const Login = ({ submitForm }) => {
     <div className='form-content-right'>  
     <div className='contain'>     
         <div className='form-inputs'>
-          <label className='form-label'>Username</label>
+          <label className='form-label'>Email</label>
           <input
             className='form-input'
             type='text'
-            name='username'
-            placeholder='Enter your username'
-            value={values.username}
+            name='email'
+            placeholder='Enter your Email'
+            value={values.email}
             onChange={handleChange}
           />
-          {errors.username && <p>{errors.username}</p>}
+          {errors.email && <p>{errors.email}</p>}
         </div>
         
         <div className='form-inputs'>
